@@ -55,6 +55,7 @@ impl<T : Display> LinkedList<T>
 
 fn main()
 {
+
   let ll = LinkedList::<i32>::new_list(6);
   let new_ll = ll.insert_head(5);
   new_ll.print();
@@ -64,4 +65,5 @@ fn main()
 
   let connect_ll = LinkedList::<i32>::new_append(4, new_ll);
   connect_ll.print();
+
 }
